@@ -26,7 +26,7 @@ const ShowsNewForm =(  )=>{
             rating: newRating,
             duration: newDuration,
             listedIn: newListedIn,
-            tile: newTitle,
+            title: newTitle,
             description: newDescription
         }
         console.log("newShowObj we are CREATING: ", newShowObj)
