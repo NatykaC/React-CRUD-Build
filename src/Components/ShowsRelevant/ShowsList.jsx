@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-
+import "./ShowsList.css"
 
 
 const ShowsList =()=>{
@@ -16,22 +16,25 @@ const ShowsList =()=>{
             // .then(console.log)
         }
         ,
-
         [ ]
     )
 
     console.log(allShows)
 
     const showsToRender = allShows.map((eachShow)=>
-        <div>
+        <div key={eachShow.id}className="show-card-styles">
             <h4>{eachShow.title}</h4>
+            <h6>{eachShow.duration}</h6>
         </div>)
 
     return(
-        <div>
+        <div className="shows-list-styles">
              <h1>All Shows</h1>
+        <div className="display-show-card">
              {showsToRender}
         </div>
+        </div>
+       
        
     )
 }

@@ -1,0 +1,16 @@
+
+.shows-list-styles {
+    background-color:plum;
+}
+
+.show-card-styles {
+    border: 10px solid navy;
+    margin: 10px;
+    border-radius: 10%;
+}
+
+.display-show-card {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+}
